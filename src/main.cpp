@@ -39,14 +39,14 @@ motor RIM = RightIntake1;
 int calibrate(void) {
   Gyro.calibrate();
   { // reset Rotation
-    LeftChassis2.resetRotation();
-    LeftChassis1.resetRotation();
-    RightChassis2.resetRotation();
-    RightChassis1.resetRotation();
-    FrontRollers.resetRotation();
-    LaunchRoller.resetRotation();
-    LeftIntake1.resetRotation();
-    RightIntake1.resetRotation();
+    L1M.resetRotation();
+    L2M.resetRotation();
+    R1M.resetRotation();
+    R2M.resetRotation();
+    FRM.resetRotation();
+    LRM.resetRotation();
+    LIM.resetRotation();
+    RIM.resetRotation();
   }
   waitUntil(!Gyro.isCalibrating());
   Gyro.setHeading(0, degrees);
