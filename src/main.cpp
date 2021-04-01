@@ -124,10 +124,10 @@ bool L1, L2, R1, R2, BtnA, BtnB, BtnX, BtnY, BtnU, BtnD, BtnL,
 
 int getController(void) {
   do {
-    Ch1 = Controller1.Axis1.value() * 1.25;
-    Ch2 = Controller1.Axis2.value() * 1.25;
-    Ch3 = Controller1.Axis3.value() * 1.25;
-    Ch4 = Controller1.Axis4.value() * 1.25;
+    Ch1 = Controller1.Axis1.value() * 1;
+    Ch2 = Controller1.Axis2.value() * 1.2;
+    Ch3 = Controller1.Axis3.value() * 1.2;
+    Ch4 = Controller1.Axis4.value() * 1.2;
     L1 = Controller1.ButtonL1.pressing();
     L2 = Controller1.ButtonL2.pressing();
     R2 = Controller1.ButtonR1.pressing();
